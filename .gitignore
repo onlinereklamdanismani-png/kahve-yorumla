@@ -30,3 +30,7 @@ next-env.d.ts
 # editor
 .vscode/
 .idea/
+*.code-workspace
+
+# cloudflare wrangler
+.wrangler/
