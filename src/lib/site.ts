@@ -17,6 +17,9 @@ export const siteConfig = {
     twitter: '',
     instagram: '',
   },
+  analytics: {
+    gaMeasurementId: 'G-XRT036JRTY',
+  },
   legal: {
     company: 'Kahve Yorumla',
     establishedYear: 2025,

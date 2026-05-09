@@ -4,6 +4,7 @@ import './globals.css';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
+import { GoogleAnalytics } from '@/components/GoogleAnalytics';
 import { organizationLd, websiteLd } from '@/lib/seo';
 import { siteConfig } from '@/lib/site';
 
@@ -68,6 +69,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <JsonLd data={organizationLd()} />
         <JsonLd data={websiteLd()} />
+        <GoogleAnalytics />
       </head>
       <body className="bg-paper text-kahve-700">
         <a
