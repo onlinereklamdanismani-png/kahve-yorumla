@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 64" role="img" aria-label="Kahve Yorumla logo">
+  <rect width="220" height="64" rx="12" fill="#fbf6ec"/>
+  <g transform="translate(12 12)">
+    <rect width="40" height="40" rx="20" fill="#6b1f2a"/>
+    <g fill="none" stroke="#fbf6ec" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M10 18h22a6 6 0 0 1 0 12h-2"/>
+      <path d="M10 18v12a8 8 0 0 0 8 8h6a8 8 0 0 0 8-8"/>
+      <path d="M16 8c1 1.6 1 3.4 0 5"/>
+      <path d="M22 8c1 1.6 1 3.4 0 5"/>
+      <path d="M28 8c1 1.6 1 3.4 0 5"/>
+    </g>
+  </g>
+  <g transform="translate(64 22)" fill="#3e271c" font-family="Cormorant Garamond, Georgia, serif">
+    <text font-size="22" font-weight="600">Kahve Yorumla</text>
+    <text x="0" y="20" font-size="10" letter-spacing="2" fill="#9c6b3c" font-family="Inter, system-ui, sans-serif" font-weight="500">KAHVEYORUMLA.COM</text>
+  </g>
+</svg>

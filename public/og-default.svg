@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fbf6ec"/>
+      <stop offset="100%" stop-color="#f6efe2"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0.15" cy="0.2" r="0.4">
+      <stop offset="0%" stop-color="rgba(201,169,106,0.35)"/>
+      <stop offset="100%" stop-color="rgba(201,169,106,0)"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.85" cy="0.85" r="0.4">
+      <stop offset="0%" stop-color="rgba(107,31,42,0.35)"/>
+      <stop offset="100%" stop-color="rgba(107,31,42,0)"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow1)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+
+  <g transform="translate(80 110)">
+    <rect width="120" height="120" rx="60" fill="#6b1f2a"/>
+    <g fill="none" stroke="#fbf6ec" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" transform="translate(28 30)">
+      <path d="M0 26h60a14 14 0 0 1 0 28h-4"/>
+      <path d="M0 26v28a18 18 0 0 0 18 18h18a18 18 0 0 0 18-18"/>
+      <path d="M14 4c2 4 2 8 0 12"/>
+      <path d="M28 4c2 4 2 8 0 12"/>
+      <path d="M42 4c2 4 2 8 0 12"/>
+    </g>
+  </g>
+
+  <g transform="translate(80 290)" fill="#3e271c" font-family="Cormorant Garamond, Georgia, serif">
+    <text font-size="86" font-weight="600">Kahve Yorumla</text>
+    <text y="80" font-size="36" fill="#7a4a25" font-weight="500">Sembol sözlüü, blog ve sade fal rehberi</text>
+  </g>
+
+  <g transform="translate(80 530)" fill="#9c6b3c" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="500" letter-spacing="3">
+    <text>KAHVEYORUMLA.COM</text>
+  </g>
+</svg>

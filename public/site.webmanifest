@@ -1,0 +1,12 @@
+{
+  "name": "Kahve Yorumla",
+  "short_name": "Kahve Yorumla",
+  "description": "Kahve falı sembol sözlüğü ve sade rehberler.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbf6ec",
+  "theme_color": "#fbf6ec",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

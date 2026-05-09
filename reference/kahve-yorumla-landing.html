@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kahve Yorumla — Tasarım Referansı</title>
+    <meta
+      name="description"
+      content="Kahve Yorumla projesinin tasarım referansı. Tek dosya, statik HTML."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+    />
+    <style>
+      :root {
+        --krem: #fbf6ec;
+        --krem-200: #f6efe2;
+        --kahve: #3e271c;
+        --kahve-soft: #7a4a25;
+        --bordo: #6b1f2a;
+        --altin: #b08a3e;
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; }
+      body {
+        background: var(--krem);
+        color: var(--kahve);
+        font-family: 'Inter', system-ui, sans-serif;
+        line-height: 1.6;
+      }
+      .serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+      .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+      header.nav {
+        position: sticky; top: 0; z-index: 10;
+        background: rgba(251, 246, 236, 0.85);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid #ecdfc6;
+      }
+      .nav-row {
+        display: flex; align-items: center; justify-content: space-between;
+        height: 64px;
+      }
+      .brand { display: flex; align-items: center; gap: 12px; color: var(--kahve); text-decoration: none; }
+      .brand-mark {
+        width: 36px; height: 36px; border-radius: 999px;
+        background: var(--bordo); color: var(--krem);
+        display: grid; place-items: center;
+      }
+      .brand-name { font-size: 18px; font-weight: 600; font-family: 'Cormorant Garamond', serif; }
+      .brand-domain { font-size: 11px; letter-spacing: 0.18em; color: var(--kahve-soft); text-transform: uppercase; }
+      .nav-links a {
+        color: var(--kahve); text-decoration: none; padding: 8px 14px;
+        border-radius: 999px; font-size: 14px; transition: background .2s;
+      }
+      .nav-links a:hover { background: var(--krem-200); color: var(--bordo); }
+      .btn {
+        display: inline-flex; align-items: center; gap: 8px;
+        padding: 12px 20px; border-radius: 999px; text-decoration: none;
+        font-size: 14px; font-weight: 500; transition: all .2s; border: 0;
+      }
+      .btn-primary { background: var(--bordo); color: var(--krem); }
+      .btn-primary:hover { background: #581821; }
+      .btn-secondary {
+        background: var(--krem); color: var(--kahve);
+        border: 1px solid #dcc69d;
+      }
+      .hero {
+        padding: 80px 0;
+        background:
+          radial-gradient(circle at 20% 10%, rgba(176,138,62,0.10), transparent 40%),
+          radial-gradient(circle at 80% 80%, rgba(107,31,42,0.08), transparent 45%);
+      }
+      .hero h1 {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 56px; line-height: 1.1; margin: 16px 0 20px;
+        color: var(--kahve); max-width: 720px;
+      }
+      .eyebrow {
+        font-size: 11px; font-weight: 600; letter-spacing: 0.22em;
+        color: var(--bordo); text-transform: uppercase;
+      }
+      .hero p { color: var(--kahve-soft); max-width: 600px; }
+      .hero-actions { display: flex; gap: 12px; margin-top: 28px; flex-wrap: wrap; }
+      .grid { display: grid; gap: 24px; }
+      .grid-3 { grid-template-columns: repeat(3, 1fr); }
+      @media (max-width: 800px) {
+        .grid-3 { grid-template-columns: 1fr; }
+        .hero h1 { font-size: 40px; }
+      }
+      .section { padding: 64px 0; }
+      .card {
+        background: #fcf8f0; border: 1px solid #ecdfc6;
+        border-radius: 18px; padding: 24px;
+        transition: transform .2s, box-shadow .2s;
+      }
+      .card:hover { transform: translateY(-2px); box-shadow: 0 10px 30px -16px rgba(58,33,21,0.25); }
+      .card h3 { font-family: 'Cormorant Garamond', serif; font-size: 22px; margin: 0 0 8px; }
+      .card p { color: var(--kahve-soft); margin: 0; font-size: 14px; }
+      .ad {
+        margin: 48px 0; padding: 24px; text-align: center;
+        border: 1px dashed #dcc69d; border-radius: 18px;
+        font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase;
+        color: #9c6b3c; background: #fbf6ec;
+      }
+      footer {
+        margin-top: 80px; padding: 40px 0;
+        border-top: 1px solid #ecdfc6; background: var(--krem-200);
+      }
+      .footer-row { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: 12px; color: var(--kahve-soft); }
+      .disclaimer {
+        margin-top: 24px; padding: 16px;
+        background: #faf3e0; border: 1px solid #efdba6; border-radius: 14px;
+        font-size: 12px; color: var(--kahve);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav-row">
+        <a class="brand" href="#">
+          <span class="brand-mark">☕</span>
+          <span>
+            <div class="brand-name">Kahve Yorumla</div>
+            <div class="brand-domain">kahveyorumla.com</div>
+          </span>
+        </a>
+        <nav class="nav-links" aria-label="Ana navigasyon">
+          <a href="#sembol">Sembol Sözlüğü</a>
+          <a href="#blog">Blog</a>
+          <a href="#hakkimizda">Hakkımızda</a>
+        </nav>
+        <a class="btn btn-primary" href="#fal">Fal Yükle</a>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Kahve falı sözlüğü ve rehberi</p>
+        <h1>Fincanın dilini sade bir rehberle anla.</h1>
+        <p>
+          Kahve Yorumla; sembol sözlüğü, kahve falı rehberi ve özgün blog yazılarını
+          bir arada sunan bağımsız bir içerik sitesidir. Yorumlar eğlence amaçlıdır.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#sembol">Sembol Sözlüğüne Git</a>
+          <a class="btn btn-secondary" href="#nasil">Nasıl Bakılır?</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sembol">
+      <div class="container">
+        <p class="eyebrow">Sözlük</p>
+        <h2 class="serif" style="font-size: 32px; margin: 8px 0 24px;">
+          Öne çıkan kahve falı sembolleri
+        </h2>
+        <div class="grid grid-3">
+          <div class="card">
+            <h3>Kuş</h3>
+            <p>Haber, müjde, beklenen küçük bir gelişme.</p>
+          </div>
+          <div class="card">
+            <h3>Balık</h3>
+            <p>Bolluk ve haber akışı; canlanan bir dönem.</p>
+          </div>
+          <div class="card">
+            <h3>Yol</h3>
+            <p>Karar, yön değişikliği, yeni bir süreç.</p>
+          </div>
+        </div>
+
+        <div class="ad" role="complementary">Reklam alanı (AdSense onayı sonrası)</div>
+
+        <div class="disclaimer">
+          <strong>Eğlence amaçlıdır:</strong> Bu site içerikleri kültürel/eğlence amaçlıdır.
+          Sağlık, hukuk veya finans kararları için yetkili uzmanlara başvurun.
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer-row">
+        <span>© 2025 Kahve Yorumla — bağımsız içerik sitesi.</span>
+        <span>kahveyorumla.com</span>
+      </div>
+    </footer>
+  </body>
+</html>
