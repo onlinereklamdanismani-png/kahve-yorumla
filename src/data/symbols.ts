@@ -302,7 +302,7 @@ export const symbols: CoffeeSymbol[] = [
     updatedAt: '2025-09-01',
   },
   {
-    slug: 'koru',
+    slug: 'kopru',
     name: 'Köprü',
     shortMeaning: 'Geçiş, uzlaşma, iki tarafı bağlama.',
     description:
@@ -387,7 +387,7 @@ export const symbols: CoffeeSymbol[] = [
     updatedAt: '2025-09-01',
   },
   {
-    slug: 'koprutas',
+    slug: 'tas',
     name: 'Taş',
     shortMeaning: 'Engel, dayanıklılık, sağlam temel.',
     description:
