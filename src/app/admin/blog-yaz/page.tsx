@@ -262,26 +262,26 @@ export default function BlogYazAdminPage() {
               >
                 {status.message}
               </p>
-              {status.url ? (
-                <a
-                  href={status.url}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-3 block text-sm font-bold text-kahve-700 underline"
-                >
-                  Yazıyı aç
-                </a>
-              ) : null}
-              {status.github ? (
-                <a
-                  href={status.github}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-3 block text-sm font-bold text-kahve-700 underline"
-                >
-                  GitHub dosyasını aç
-                </a>
-              ) : null}
+              {status.type === 'success' && status.url ? (
+  <a
+    href={status.url}
+    target="_blank"
+    rel="noreferrer"
+    className="mt-3 block text-sm font-bold text-kahve-700 underline"
+  >
+    Yazıyı aç
+  </a>
+) : null}
+{status.type === 'success' && status.github ? (
+  <a
+    href={status.github}
+    target="_blank"
+    rel="noreferrer"
+    className="mt-3 block text-sm font-bold text-kahve-700 underline"
+  >
+    GitHub dosyasını aç
+  </a>
+) : null}
             </div>
 
             <div className="rounded-3xl border border-kahve-100 bg-white/80 p-5 shadow-soft">
