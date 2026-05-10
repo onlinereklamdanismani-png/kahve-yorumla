@@ -160,3 +160,4 @@ reference/
 ## Lisans
 
 Tüm hakları Kahve Yorumla'ya aittir. Kişisel ve eğitim amaçlı alıntı için kaynak gösterilmesi yeterlidir; ticari kullanım için yazılı izin gereklidir.
+SEO güncellemesi yapıldı.
