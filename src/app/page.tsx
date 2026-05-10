@@ -28,7 +28,7 @@ export default function HomePage() {
               Kahve falı sözlüğü ve rehberi
             </p>
             <h1 className="heading-serif mt-5 text-4xl text-balance leading-tight sm:text-5xl lg:text-6xl">
-              Fincanın dilini sade bir rehberle anla.
+              Sanal Kahve Falı ile Fincanını Yorumla.
             </h1>
             <p className="mt-6 max-w-prose text-base leading-relaxed text-kahve-400 sm:text-lg">
               Kahve Yorumla; sembol sözlüğü, kahve falı rehberi ve özgün blog yazılarını
