@@ -3,9 +3,9 @@ export const siteConfig = {
   domain: 'kahveyorumla.com',
   url: 'https://kahveyorumla.com',
   locale: 'tr_TR',
-  defaultTitle: 'Kahve Yorumla — Kahve Falı Sembol Sözlüğü ve Rehberi',
+  defaultTitle: 'Sanal Kahve Falı | Ücretsiz Kahve Falı Yorumla - Kahve Yorumla',
   defaultDescription:
-    'Kahve Yorumla; kahve falı sembollerinin anlamları, fal okuma rehberi ve özgün blog yazıları sunan bağımsız bir içerik sitesidir. Eğlence amaçlıdır.',
+    'Fincan fotoğrafını yükle, ücretsiz sanal kahve falı yorumunu al. Kahve Yorumla ile aşk, para, kariyer ve genel kahve falını eğlenceli şekilde keşfet.',
   brand: {
     tagline: 'Fincanın dilinden anlamak için sade bir rehber.',
     short: 'Kahve falı sembollerini ve geleneğini sade bir dille anlatıyoruz.',
