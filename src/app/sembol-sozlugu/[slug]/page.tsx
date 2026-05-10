@@ -27,8 +27,9 @@ export function generateMetadata({ params }: SymbolPageProps): Metadata {
   if (!symbol) return {};
 
   return buildMetadata({
-    title: `${symbol.name} Sembolünün Anlamı`,
-    description: symbol.shortMeaning,
+    
+    title: `Kahve Falında ${symbol.name} Görmek Ne Anlama Gelir?`,
+description: `${symbol.name} kahve falında ne anlama gelir? ${symbol.shortMeaning} Fincanın kenarı, ortası ve dibindeki yorumlarını Kahve Yorumla'da keşfet.`,
     path: `/sembol-sozlugu/${symbol.slug}/`,
     keywords: [`${symbol.name.toLowerCase()} sembolü`, 'kahve falı sembolleri', symbol.category.toLowerCase()],
   });
@@ -48,16 +49,19 @@ export default function SymbolDetailPage({ params }: SymbolPageProps) {
 
   return (
     <>
-      <PageHeader
-        eyebrow={`Sembol · ${symbol.category}`}
-        title={`${symbol.name} sembolü`}
-        description={symbol.shortMeaning}
-        breadcrumb={[
-          { href: '/', label: 'Ana Sayfa' },
-          { href: '/sembol-sozlugu/', label: 'Sembol Sözlüğü' },
-          { href: `/sembol-sozlugu/${symbol.slug}/`, label: symbol.name },
-        ]}
-      />
+     <PageHeader
+  eyebrow={`Kahve Falı Sembol Sözlüğü · ${symbol.category}`}
+  title={`Kahve Falında ${symbol.name} Görmek Ne Anlama Gelir?`}
+  description={`${symbol.name} sembolünün kısa anlamı: ${symbol.shortMeaning}`}
+  breadcrumb={[
+    { href: '/', label: 'Ana Sayfa' },
+    { href: '/sembol-sozlugu/', label: 'Sembol Sözlüğü' },
+    {
+      href: `/sembol-sozlugu/${symbol.slug}/`,
+      label: `Kahve Falında ${symbol.name} Görmek`,
+    },
+  ]}
+/>
       <JsonLd
         data={breadcrumbLd([
           { name: 'Ana Sayfa', path: '/' },
