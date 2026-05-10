@@ -195,7 +195,7 @@ export const symbols: CoffeeSymbol[] = [
       middle: 'Halihazırda akan bir süreç.',
       bottom: 'Uzun süredir biriken duyguların kanal bulması.',
     },
-    related: ['balik', 'ay', 'koru'],
+    related: ['balik', 'ay', 'kopru'],
     category: 'Doğa',
     updatedAt: '2025-09-01',
   },
